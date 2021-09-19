@@ -1,0 +1,29 @@
+/* CSS styling of testimonials slider */
+/* Testimonial slider wrapper container */
+#tsliderWrapper{
+	display: block;
+	width: 1001px;
+	height: 775px;
+}
+/* Slider component */
+.tslider {
+ position: relative;
+ margin: 0;
+ padding: 0;
+}
+/* Individual slide */
+.tslide {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 480px;
+ height: 320px;
+}
+/* Reviewer pictures */
+.testpic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+}
