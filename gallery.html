@@ -7,7 +7,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet" type="text/css">
         <meta name="viewport" content="width=device-width,intitial-scale=1.0">
-    </head>
+        <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=WFARZ2KN2L23a7VIiM8EEjzI1MoH8HjpB8neum4GSzty01JR7WazK6fKMnLsjvOmhlry7tSozS-sLMeWWqg8BeueCpmBVwTwcDaKeR3aLBAmmq_q3Kfxd-KFERmNy9PaggbslTe0MzHHTXqiZ45HyFsiOEoi0jgyUsHjAODlGVTvymwskWnC_YBflaaztKT2BV7FHgnJDy9QeNw9rsjaLvr6h-xHH1BcTMOipBqSJkzvosMi8SPKzfIx1qmGJAk1FmS5r5VPPJw_D9uU2pGCOJVCr4EMi-Y46ggeCkaq3E00FDdCW7WC0J3m-pqH3eL3jfNz1qXKYrkcOTZPgq0DAvcJ8fUYC2MFcW8OoiLMj3uPR1vv9UFjkSCRS89sdhL1VWNjMTJg3fOsxbXYuvredDsQRqirH39Sak__bTBLmbdebgKQ1Ruwo5_A6-NFjERRzhYx5e0hSBd3Mw7k99IMZOU2Q_Wxu2QToQqY-RZrv5DObTHsy-KdN8lv1WI1tjpZhBytN393unGuRKCiv1FBE6hmnoMEalZUXCoIyuvkEU-0TMMsAjkr4Cet4OrH20pAKTWFdlXudYBNHxgi85v-O8OIEtd7zWoH1k7I-2fYiw832SYEzRRpXT6mChTtOCjam2ZhmS4Q_F6PKi_BfhWpvA" charset="UTF-8"></script><script src="js/gallery.js"></script>
+        <script type="text/JavaScript" src="js/gallery.js"></script>        <!-- custom gallery javascript file-->
+      </head>
     <body>
         <section id="main">
             <nav>
@@ -17,18 +19,72 @@
             </nav>
             <!--start of different content-->
             <div class="flex-container">
-                <div><img src="images/gallery1.jpg" alt="image of food"></div>
-                <div><img src="images/gallery2.jpg" alt="image of food"></div>
-                <div><img src="images/gallery3.jpg" alt="image of food"></div>
+                 <div><img src="images/gallery1.jpg" alt="image of food" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></div>
+                <div><img src="images/gallery2.jpg" alt="image of food" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"></div>
+                <div><img src="images/gallery3.jpg" alt="image of food" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"></div>
                 
-                <div><img src="images/gallery4.jpg" alt="image of food"></div>
-                <div><img src="images/gallery5.jpg" alt="image of food"></div>
-                <div><img src="images/gallery6.jpg" alt="image of food"></div>
+                <div><img src="images/gallery4.jpg" alt="image of food" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"></div>
+                <div><img src="images/gallery5.jpg" alt="image of food" onclick="openModal();currentSlide(5)" class="hover-shadow cursor"></div>
+                <div><img src="images/gallery6.jpg" alt="image of food" onclick="openModal();currentSlide(6)" class="hover-shadow cursor"></div>
                 
-                <div><img src="images/gallery7.jpg" alt="image of food"></div>
-                <div><img src="images/gallery8.jpg" alt="image of food"></div>
-                <div><img src="images/gallery9.jpg" alt="image of food"></div>
+                <div><img src="images/gallery7.jpg" alt="image of food" onclick="openModal();currentSlide(7)" class="hover-shadow cursor"></div>
+                <div><img src="images/gallery8.jpg" alt="image of food" onclick="openModal();currentSlide(8)" class="hover-shadow cursor"></div>
+                <div><img src="images/gallery9.jpg" alt="image of food" onclick="openModal();currentSlide(9)" class="hover-shadow cursor"></div>
             
+            
+            </div>
+            <!-- modal container -->
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+              <div class="modal-content">
+
+                <div class="mySlides">
+                  <div class="numbertext">1 / 9</div>
+                  <img src="images/gallery1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 9</div>
+                  <img src="images/gallery2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 9</div>
+                  <img src="images/gallery3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">4 / 9</div>
+                  <img src="images/gallery4.jpg" style="width:100%">
+                </div>
+                  <div class="mySlides">
+                  <div class="numbertext">5 / 9</div>
+                  <img src="images/gallery5.jpg" style="width:100%">
+                </div>
+                  <div class="mySlides">
+                  <div class="numbertext">6 / 9</div>
+                  <img src="images/gallery6.jpg" style="width:100%">
+                </div>
+                  <div class="mySlides">
+                  <div class="numbertext">7 / 9</div>
+                  <img src="images/gallery7.jpg" style="width:100%">
+                </div>
+                  <div class="mySlides">
+                  <div class="numbertext">8 / 9</div>
+                  <img src="images/gallery8.jpg" style="width:100%">
+                </div>
+                  <div class="mySlides">
+                  <div class="numbertext">9 / 9</div>
+                  <img src="images/gallery9.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+              </div>
             </div>
             <!--end of different content-->
             <footer>
